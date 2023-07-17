@@ -14,7 +14,7 @@
 - [HackDays Comunidade DS - 5th Edition](#hackdays-comunidade-ds---5th-edition)
 - [1. The Businness Problem](#1-the-businness-problem)
 - [2. The approach](#2-the-approach)
-- [The dataset](#the-dataset)
+- [3. The dataset](#3-the-dataset)
 
 <!-- /TOC -->
 
@@ -46,7 +46,7 @@ The LightGBM Classifier was the best performing algorithms among the ones we tes
 
 ---
 
-# The dataset
+# 3. The dataset
 
 The dataset was obtained directly from the Kaggle page of the competition: https://www.kaggle.com/competitions/instyle-nps/overview
 
