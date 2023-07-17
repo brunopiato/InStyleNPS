@@ -14,6 +14,7 @@
 - [HackDays Comunidade DS - 5th Edition](#hackdays-comunidade-ds---5th-edition)
 - [1. The Businness Problem](#1-the-businness-problem)
 - [2. The approach](#2-the-approach)
+- [The dataset](#the-dataset)
 
 <!-- /TOC -->
 
@@ -45,4 +46,36 @@ The LightGBM Classifier was the best performing algorithms among the ones we tes
 
 ---
 
+# The dataset
+
+The dataset was obtained directly from the Kaggle page of the competition: https://www.kaggle.com/competitions/instyle-nps/overview
+
+The train data was composed, in total, of 24 columns representing the features and around 130 thousand row comprising the entries for each purchase evaluation by the customers. 
+
+Among these 24 features, we had:
+
+- *ID*: The client's dentification number
+- *Gender:* The client's gender
+- *Age:* The client's age
+- *Type of Purchase:* Which the purchase was made for personal usage or gift
+- *Store size:* The size of the store (i.e. small, medium and big)
+- *Store distance:* Distance from downtown
+- *InStore wifi:* Satisfaction level with the in store wi-fi
+- *Open/Close time convenient:* Satisfaction level with oppening and closing times of the store
+- *Easy of online shopping:* Satisfaction level with the online shopping service
+- *Store location:* Satisfaction level with the access to the store
+- *Toilet cleaning:* Satisfaction level with the toilet cleaning
+- *Dressing room:* Satisfaction level with the dressing rooms
+- *Waiting room:* Satisfaction level with the waiting room of the store
+- *Kids entertainment:* Satisfaction level with kids entertainment service
+- *Seller service:* Satisfaction level with the store attendants
+- *Showroom:* Satisfaction level with the store's showroom
+- *Self-Store:* Satisfaction level with self-sorage service
+- *Purchase service:* Satisfaction level with payment service
+- *Store Service:* Satisfaction level with the overall service of the store
+- *Cleanliness:* Satisfaction level with the overall cleanliness of the store
+- *Carrier delay in minutes:* The amount of time in minutes that the carrier delayed their departure from the store
+- *Delivery delay in minutes:* The amount of time in minutes that the products delayed to be delivery at the customer's delivery address.
+
+---
 
