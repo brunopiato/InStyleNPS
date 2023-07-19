@@ -1,4 +1,6 @@
-# HackDays Comunidade DS - 5th Edition
+# InStyle Net Promoter Score - HackDays Comunidade DS, 5th Edition
+
+![Clothing store](./img/clothing_store.jpg)
 
 **Date:** July the 15th and 16th of 2023
 
@@ -11,10 +13,14 @@
 
 <!-- TOC -->
 
-- [HackDays Comunidade DS - 5th Edition](#hackdays-comunidade-ds---5th-edition)
+- [InStyle Net Promoter Score - HackDays Comunidade DS, 5th Edition](#instyle-net-promoter-score---hackdays-comunidade-ds-5th-edition)
 - [1. The Businness Problem](#1-the-businness-problem)
 - [2. The approach](#2-the-approach)
 - [3. The dataset](#3-the-dataset)
+- [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
+  - [4.1 NPS Score Distributions](#41-nps-score-distributions)
+  - [4.2 Correlation Between Features](#42-correlation-between-features)
+- [5. Implementing Machine Learning Algorithms](#5-implementing-machine-learning-algorithms)
 
 <!-- /TOC -->
 
@@ -79,4 +85,30 @@ Among these 24 features, we had:
 
 ---
 
+# 4. Exploratory Data Analysis
+
+## 4.1 NPS Score Distributions
+When we look to the distribution of the evaluation scores for each criteria, we can notice that some criteria have very different score distribution between Satisfied and Neutral/Unsatisfied customers.
+
 ![Boxplots das notas](./img/boxplots.png)
+
+![Kdeplots das notas](./img/kdeplots.png)
+
+For example, the score for in store wi-fi service are more widespread among satisfied customers than among unsatisfied. This can lead us to think that this was not a determinant feature to define which a person is or is not satisfied with the store.
+
+Other features such as open/close time and store location did not differ substantly between satisfied and unsatisfied customers, leading us to think that they are not important features to determine a customer's satisfaction.
+
+However features as dressing room. waiting room and kids entertainment service tend to comprise the biggest differences between satisfied and unsatisfied customers, indicating that these features may be very important to determine a customer's satisfaction index. 
+
+The overall mean score for satisfied customers was around 3.62 with standard deviation of 0.59, while the overall mean score for unsatisfied customers was around 2.95 with standard deviation of 0.56, which means that, in general notes bellow 3.0 points are indicative of poor quality perception by the customers.
+
+## 4.2 Correlation Between Features
+
+To understand a little better the relation between features, we constructed a correlation plot. We can observe that there are a few variable highly correlated such as the cleanliness score and the scores for toilet cleaning, watiting room and kids entertainment. The ease of online shopping is correlated to the in store wi-fi quality as well. It seems that these features vary together and influence each other.
+
+![Correlation plot between scores and variable](img/corrplot.png)
+
+--- 
+
+# 5. Implementing Machine Learning Algorithms
+
