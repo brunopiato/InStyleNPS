@@ -79,3 +79,4 @@ Among these 24 features, we had:
 
 ---
 
+![Boxplots das notas](./img/boxplots.png)
