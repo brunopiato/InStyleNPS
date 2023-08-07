@@ -11,6 +11,8 @@
 - Kaique Faustino 
 - Mattheus Gomes
 
+In this project we used a Kaggle dataset to train a supervised learning classification algorithm to predict the customer's satisfaction with the InStyle stores based on the Network Promoter Score and the client's experience. 
+
 <!-- TOC -->
 
 - [InStyle Net Promoter Score - HackDays Comunidade DS, 5th Edition](#instyle-net-promoter-score---hackdays-comunidade-ds-5th-edition)
