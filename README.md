@@ -96,7 +96,7 @@ When we look to the distribution of the evaluation scores for each criteria, we 
 
 ![Kdeplots das notas](./img/kdeplots.png)
 
-For example, the score for in store wi-fi service are more widespread among satisfied customers than among unsatisfied. This can lead us to think that this was not a determinant feature to define which a person is or is not satisfied with the store.
+For example, the scores for in store wi-fi service are more widespread among satisfied customers than among unsatisfied. This can lead us to think that this was not a determinant feature to define which a person is or is not satisfied with the store.
 
 Other features such as open/close time and store location did not differ substantially between satisfied and unsatisfied customers, leading us to think that they are not important features to determine a customer's satisfaction.
 
@@ -112,5 +112,29 @@ To understand a little better the relation between features, we constructed a co
 
 --- 
 
-# 5. Implementing Machine Learning Algorithms
+# 5. Machine Learning Algorithms
+
+## 5.1 Implemented Models
+
+To achieve the best possible result we tested four different supervised learning classification algorithms:
+
+- RandomForest Classifier 
+- XGBoost Classifier 
+- LightGBM Classifier 
+- CatBoost Classifier
+
+We compared them in terms of their performance metrics over the train and validation datasets. LightGBM Classifier algorithm had the best performance between the four tested models and hence was chosen to be obtimized and fine-tuned to be brought to production.
+
+## 5.2 Optimization and hyperparameter fine-tuning
+
+To optimize and fine-tune the model's hyperparameters, we conducted a random search through several different values for:
+
+- colsample_bytree
+- learning_rate
+- max_depth
+- n_estimator
+- num_leaves
+- subsample
+
+These values gave the algorithm a 95.13% precision score, meaning that it was capable of precisely predict a customer's satisfaction from its NPS responses 95 times out of 100 responses.
 
